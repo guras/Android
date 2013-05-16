@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#ffD5D2CB</color>
+    <color name="darkGrey">#ff868E8E</color>
+    <color name="ecru">#ffC9B99F</color>
+    <color name="warmEcru">#ffC9B99F</color>
+    <color name="ginger">#ff92623E</color>
+    <color name="warmGrey">#ff92623E</color>
+    <color name="black">#ff000000</color>
+    
+    <color name="businessLightestBlue">#dda1adc7</color>
+    <color name="businessLightestBlue_alpha">#aaa1adc7</color>
+	<color name="businessLightBlue">#ff788cb3</color>
+    <color name="businessLightBlue_alpha">#cc788cb3</color>
+    <color name="background">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="yellow">#ffFF9515</color>
+    <color name="line">#ffEAEFF2</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_add"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:gravity="left"
+        android:text="Laptop DELL 15''"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fullAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:hint="@string/inputAmount"
+        android:textColorHint="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/amountWithoutVatListStatic"
+        style="@style/list_subtext"
+        android:layout_below="@id/itemName"
+        android:gravity="left"
+        android:text="@string/amountWithoutVATStatic"
+        android:textColor="@color/darkGrey"
+        android:textColorHint="@color/darkGrey" />
+
+    <TextView
+        android:id="@+id/amountWithoutVatList"
+        style="@style/list_subtext"
+        android:layout_below="@id/itemName"
+        android:gravity="right"
+        android:text="@string/countedAmountMock"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:id="@+id/finalAmountStatic"
+        style="@style/list_subtext"
+        android:layout_below="@id/amountWithoutVatListStatic"
+        android:gravity="left"
+        android:text="@string/amountWithoutIncomeTaxStatic"
+        android:textColor="@color/darkGrey"
+        android:textColorHint="@color/darkGrey" />
+
+    <TextView
+        android:id="@+id/finalAmount"
+        style="@style/list_subtext"
+        android:layout_below="@id/amountWithoutVatList"
+        android:gravity="right"
+        android:text="@string/countedAmountMock"
+        android:textColor="@color/yellow" />
+
+</RelativeLayout>

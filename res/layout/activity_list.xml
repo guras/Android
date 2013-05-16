@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"
+    tools:context=".ListActivity" >
+
+    <ListView
+        android:id="@+id/amountsList"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" >
+    </ListView>
+    
+    <Button 
+        android:onClick="clearList"
+		android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:hint="@string/archiveAmounts"
+        
+        />
+
+</LinearLayout>

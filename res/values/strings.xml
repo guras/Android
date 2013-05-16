@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Podateczek</string>
+    <string name="action_settings">Settings</string>
+    <string name="inputAmount">4312.32</string>
+    <string name="amountWithoutVAT">3214 PLN</string>
+    <string name="amountWithoutVATStatic">BEZ VAT</string>
+    <string name="finalAmountMock">1234.43 PLN</string>
+    <string name="itemNameMock">Nowy telefon</string>
+    <string name="amountWithoutIncomeTaxStatic">W KOSZTACH:</string>
+    <string name="amountWithoutTaxStatic">Podatek ogółem:</string>
+    <string name="vat_23">23%</string>
+    <string name="vat_8">8%</string>
+    <string name="vat_0">0%</string>
+    <string name="addToList">+</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="hello_world">Jeeee!</string>
+    <string name="additionalAmountMock">23% / 43234 PLN</string>
+    <string name="countedAmountMock">Płacisz: 4312.32 PLN</string>
+    <string name="title_activity_name_enter">Podaj nazwę</string>
+    <string name="enterName">Podaj nazwe</string>
+    <string name="archiveAmounts">Zakończ okres rozliczeniowy</string>
+    <string name="title_activity_tab_layout">TabLayoutActivity</string>
+    <string name="inputHint">CENA</string>
+
+</resources>

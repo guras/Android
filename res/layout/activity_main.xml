@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/genericLayout"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/vat_ratio"
+        style="@style/blueField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_vat_23"
+            style="@style/vatRadioButton"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/vat_23" />
+
+        <RadioButton
+            android:id="@+id/radio_vat_8"
+            style="@style/vatRadioButton"
+            android:gravity="center"
+            android:text="@string/vat_8" />
+
+        <RadioButton
+            android:id="@+id/radio_vat_0"
+            style="@style/vatRadioButton"
+            android:gravity="center"
+            android:text="@string/vat_0" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/inputAmount"
+        style="@style/inputAmount"
+        android:layout_below="@id/vat_ratio"
+        android:hint="@string/inputHint" />
+
+    <Button
+        android:id="@+id/addToList"
+        style="@style/addButton"
+        android:layout_below="@id/vat_ratio"
+        android:hint="@string/addToList"
+        android:onClick="savePrice" >
+    </Button>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/addToList"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/vatBox"
+        style="@style/infobox"
+        android:layout_below="@id/inputAmount"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/amountWithoutVATStatic"
+                style="@style/leftColumn"
+                android:hint="@string/amountWithoutVATStatic" />
+
+            <TextView
+                android:id="@+id/VATRate"
+                style="@style/leftColumnSmall"
+                android:text="23%" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/amountWithoutVAT"
+            style="@style/rightColumn"
+            android:text="4312.43 PLN" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/infobox"
+        android:layout_below="@id/vatBox"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/amountWithoutIncomeTaxStatic"
+                style="@style/leftColumn"
+                android:hint="@string/amountWithoutIncomeTaxStatic" />
+
+            <TextView
+                android:id="@+id/incomeTaxRate"
+                style="@style/leftColumnSmall"
+                android:text="18%" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/amountWithoutIncomeTax"
+            style="@style/rightColumn"
+            android:text="4312 PLN" />
+    </LinearLayout>
+
+</RelativeLayout>
